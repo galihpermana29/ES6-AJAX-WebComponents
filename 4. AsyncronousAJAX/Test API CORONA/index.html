@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+        .provinsi{
+            display: flex;
+        }
+        .btn{
+            margin-left: 1rem;
+        }
+        .dataCovid{
+            margin-top: 5rem;
+            
+        }
+        .covidContainer{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+  </head>
+  <body>
+   
+    <header> 
+
+        <h1>Pantau Covid</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi dignissimos id nulla ullam, aperiam, explicabo quasi nihil voluptatum, eos aliquid voluptate sunt sed! Veritatis animi ducimus quidem consequuntur vero nulla natus. Illum nobis alias, consequatur, soluta unde labore odio amet vitae asperiores tempore hic atque placeat temporibus quasi accusantium.</p>
+
+    </header>
+    <main>
+        <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #08f;"></path></svg></div>
+        <div class="nasional">
+            <h1>Pantau Nasional</h1>
+            <div class="container covidContainer nas-cont">
+
+            </div>
+        </div>
+
+        <div class="pilihProvinsi">
+            <h1>Pantau Provinsi</h1>
+            <div class="container provinsi">
+                <select class="form-control">
+                    <provinsi-indonesia></provinsi-indonesia>
+                </select>
+                <button type="submit" class="btn btn-info search">Search</button>
+            </div>
+
+            <div class="dataCovid">
+                <div class="container covidContainer prov-cont">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="informasi">
+            <h1>INFORMASI SEPUTAR COVID</h1>
+        </div>
+    </main>
+
+    <footer>
+        <h6>INI FOOTER</h6>
+        <p>bagian paling bawah website <br> dibuat oleh Galih Permana & Ryo Shandy</p>
+    </footer>
+ 
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script type="module" src="tes.js" ></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
