@@ -21,3 +21,11 @@ let Hewan = {
 //* setelah di destructuring, lalu di assign ke local variabel baru namaHewan dan jenisHewan
 let { nama: namaHewan, jenis: jenisHewan } = Hewan;
 console.log(namaHewan);
+
+let newObj = {
+   univ: 'Universitas Gajah Duduk',
+   provinsi: 'Jogja'
+}
+
+//* tidak bisa mengubah apapun kalau objecnya kita freeze
+Object.freeze(newObj)
