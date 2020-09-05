@@ -29,3 +29,28 @@ let newObj = {
 
 //* tidak bisa mengubah apapun kalau objecnya kita freeze
 Object.freeze(newObj)
+
+//* destructuring object in a function parameter
+let tes = ({univ,provinsi}) => {
+   console.log(univ)
+   console.log(provinsi)
+}
+
+tes(newObj)
+
+//* return an object in arrow function 
+//! non using es6
+// const uji = (x,y) => ({
+//    x:x,
+//    y:y
+// })
+
+// let a = uji('galih', 'ub')
+// console.log(a)
+
+//! using es6
+// pada es6 untung mengindari pengulangan penamaan pada properties, dapat langsung saja ditulis contoh {x,y} maka otomatis akan mereturn object yang {x: x, y: y}
+const uji = (nama,univ) => ({nama,univ})
+
+let a = uji('galih', 'ub')
+console.log(a)
